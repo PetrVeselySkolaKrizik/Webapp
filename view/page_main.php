@@ -16,6 +16,13 @@
     </style>
     </head>
     <body>
-        <p>paragraph</p>
+        <?php if ($user_set): ?>
+            <button>Profile</button>
+        <?php else: ?>
+            <button>Login/Register</button>
+        <?php endif; ?>
+        <p>
+            <?php echo $content; ?>
+        </p>
     </body>
 </html>

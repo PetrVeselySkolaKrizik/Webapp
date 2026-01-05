@@ -1,8 +1,16 @@
 <?php
 
-include "controller/controller_main.php";
+include "controller/controller_view.php";
+include "controller/controller_user.php";
 
-$controller = new Control();
+if (isset($_SESSION["user_id"])) {
+$user_set = true;
+} else {
+$user_set = false;
+}
+
+$content = ControlView::render();
+$controller = new ControlView();
 $controller->load();
 
 ?>
