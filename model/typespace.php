@@ -1,14 +1,17 @@
 <?php
-include "model/conn.php";
-
-class Typespace{
-
-    public static function generate(){
+class Typespace {
+    public static function generate() {
+        require_once "model/conn.php";
         $content = "";
-        $sql = "SELECT * FROM tasks";
-        foreach ($conn->query($sql) as $row){
-            $content += $row["task"] + " ";
+        $sql = "SELECT word FROM words"; // Better to select specific column
+        $qry = $con->prepare($sql);
+        $qry->execute();
+
+        // Fix: Use $qry instead of $get, and fetch directly in the loop
+        while ($row = $qry->fetch(PDO::FETCH_ASSOC)) {
+            $content .= $row["word"] . " ";
         }
-        return $content;
+
+        return trim($content);
     }
 }

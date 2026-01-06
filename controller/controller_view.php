@@ -8,7 +8,8 @@ class ControlView {
     }
 
     public static function render(){
-        return Typespace::generate();
+        $content = Typespace::generate();
+        return $content;
     }
 
 }

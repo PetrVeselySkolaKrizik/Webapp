@@ -2,14 +2,15 @@
 <html>
     <head>
     <style>
-        body{display: flex;
+        .main{
+            display: flex;
             align-items: center;
             justify-content: center;
             width: 100%;
             height: 100%;
-        
         }
-        p{width: 400px;
+        p{
+            width: 400px;
             height: 200px;
             border: solid 3px black;
         }
@@ -21,8 +22,11 @@
         <?php else: ?>
             <button>Login/Register</button>
         <?php endif; ?>
+
+        <div id="main">
         <p>
             <?php echo $content; ?>
         </p>
+        </div>
     </body>
 </html>

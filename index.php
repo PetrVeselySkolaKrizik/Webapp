@@ -9,8 +9,8 @@ $user_set = true;
 $user_set = false;
 }
 
+
 $content = ControlView::render();
-$controller = new ControlView();
-$controller->load();
+require "view/page_main.php";
 
 ?>
