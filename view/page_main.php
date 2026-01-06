@@ -17,11 +17,14 @@
     </style>
     </head>
     <body>
-        <?php if ($user_set): ?>
-            <button>Profile</button>
+        <form action="index.php" method="get">
+            <?php if ($user_set): ?>
+            <input type="submit" value="Profile">
         <?php else: ?>
-            <button>Login/Register</button>
+            <input type="submit" value="Login/Register">
         <?php endif; ?>
+            <input type="hidden" name="logging_in" value="true">
+        </form>
 
         <div id="main">
         <p>
