@@ -1,6 +1,7 @@
 <?php
 
 include "controller/controller_view.php";
+
 $viwc = new ControlView();
 
 if (isset($_SESSION["user_id"])) {

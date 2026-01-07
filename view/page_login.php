@@ -10,7 +10,7 @@
             <label for="pswd">password</label>
             <input type="password" name="pswd" id="pswd">
             <label for="pswdvrf">verify password</label>
-            <input type="password" name="pswdvrf" id="pswdvrf">
+            <input type="password" name="pswdvrf" id="psdwvrf">
 
             <input type="submit" value="Login/Register">
         </form>
