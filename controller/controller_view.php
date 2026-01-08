@@ -11,9 +11,14 @@ class ControlView {
         require "view/page_login.php";
     }
 
-    public static function render(){
-        $content = Typespace::generate();
-        return $content;
+    public static function render($con){
+        $content = "";
+        $words = Typespace::get($con);
+        for($i = 0; $i < count($words)*10; $i++){
+            $rnd = rand(1,count($words));
+            $content .= $words[$rnd]. " ";
+        }
+        return trim($content);
     }
 
 }

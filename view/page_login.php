@@ -11,6 +11,7 @@
             <input type="password" name="pswd" id="pswd">
             <label for="pswdvrf">verify password</label>
             <input type="password" name="pswdvrf" id="psdwvrf">
+            <input type="hidden" name="logging_in" value="true">
 
             <input type="submit" value="Login/Register">
         </form>
