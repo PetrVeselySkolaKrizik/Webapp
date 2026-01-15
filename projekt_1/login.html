@@ -22,13 +22,27 @@
         crossorigin="anonymous"></script>
 
 <div id="login_page" class="d-flex justify-content-center align-items-center flex-fill bg-dark text-white">
-    <form id="login" class="fs-3 text-center my-5 p-4 border rounded border-dark-subtle background-pink bg-gradient">
-        <label for="username">Username:</label><br>
-        <input type="text" id="username" name="username" class="bg-dark bg-gradient border border-dark rounded"><br>
-        <label for="password">Password:</label><br>
-        <input type="password" id="password" name="password" class="bg-dark bg-gradient border border-dark rounded"><br>
+
+    <form id="register" class="fs-3 text-center my-5 me-5 p-4 border rounded border-dark-subtle background-pink bg-gradient">
+        <p>Register</p>
+        <label for="username_register">Username:</label><br>
+        <input type="text" id="username_register" name="username" class="bg-dark bg-gradient border border-dark rounded"><br>
+        <label for="password_register">Password:</label><br>
+        <input type="password" id="password_register" name="password" class="bg-dark bg-gradient border border-dark rounded"><br>
+        <label for="password_repeat_register">Repeat password:</label><br>
+        <input type="password" id="password_repeat_register" name="password" class="bg-dark bg-gradient border border-dark rounded"><br>
         <input type="submit" value="Submit" class="mt-4 px-4 py-2 bg-dark bg-gradient text-white border border-dark rounded">
     </form>
+
+    <form id="login" class="fs-3 text-center my-5 ms-5 p-4 border rounded border-dark-subtle background-pink bg-gradient">
+        <p>Login</p>
+        <label for="username_login">Username:</label><br>
+        <input type="text" id="username_login" name="username" class="bg-dark bg-gradient border border-dark rounded"><br>
+        <label for="password_login">Password:</label><br>
+        <input type="password" id="password_login" name="password" class="bg-dark bg-gradient border border-dark rounded"><br>
+        <input type="submit" value="Submit" class="mt-4 px-4 py-2 bg-dark bg-gradient text-white border border-dark rounded">
+    </form>
+
 </div>
 
 
