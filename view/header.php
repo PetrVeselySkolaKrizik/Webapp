@@ -7,7 +7,7 @@
 <div id="navbar" class="navbar sticky-top navbar-expand-lg bg-dark text-white border border-dark-subtle fs-2">
 
     <a class="navbar-brand my-2 mx-5 text-white" href="index.php">
-        <img src="/img/cat_logo.jpg" alt="logo" width="30" height="24">
+        <img src="img/cat_logo.png" alt="logo" width="30" height="24">
         Text
     </a>
 

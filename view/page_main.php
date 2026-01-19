@@ -38,7 +38,6 @@
                     </div>
                     <div id="overlay">Click here to focus</div>
                     <div id="result" class="bg-dark"></div>
-
                 </div>
             </div>
             <a href="index.php" class="btn background-pink text-white text-center border-white bi bi-arrow-clockwise bi bi-arrow-clockwise" id="restart"></a>

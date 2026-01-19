@@ -5,7 +5,7 @@ const caret = document.getElementById("caret");
 const wrdContainer = document.getElementById("words");
 const words = Array.from(wrdContainer.children);
 const overlay = document.getElementById("overlay");
-const result = document.getElementById("result");
+const resultElmnt = document.getElementById("result");
 
 //functionality
 let cntWord = 0;
@@ -34,7 +34,9 @@ let blinkTimeout;
 
 //initial setup
 updateWrd();
-document.addEventListener("load", () => )
+document.addEventListener("load", () => {
+    resultElmnt.classList.remove("visible");
+})
 
 wordsWrap.addEventListener("keydown", keyPrss)
 wordsWrap.addEventListener("keydown", (event) => {
@@ -53,7 +55,6 @@ wordsWrap.addEventListener("keydown", (event) => {
 document.addEventListener('click', (event) => {
 
     if (event.target === overlay) {
-            sessionStorage.setItem("focused", "true");
         moveCrt(false);
         caret.style.borderLeft = "solid yellow 2px";
         overlay.classList.add('hidden');
@@ -61,10 +62,8 @@ document.addEventListener('click', (event) => {
     }
 
     if (!typeSpace.contains(event.target)) {
-            sessionStorage.setItem("focused", "false");
         caret.style.border = "";
         setTimeout(() => {overlay.classList.remove('hidden');}, 500)
-
     }
 });
 
@@ -75,7 +74,8 @@ function result(){
     console.log(errorsLeft);
     console.log(extras);
     console.log(extrasLeft);
-    //function for showing the result
+    resultElmnt.classList.add("visible");
+    resultElmnt.innerHTML = "lol";
 }
 function timer(sec){
     let countdown = setInterval(() => {
