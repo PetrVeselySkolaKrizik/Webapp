@@ -26,8 +26,8 @@
 <body class="d-flex flex-column min-vh-100 font-monospace">
 
 <div id="login_page" class="d-flex justify-content-center align-items-center flex-fill bg-dark text-white">
-
-    <form id="register" class="fs-3 text-center my-5 me-5 p-4 border rounded border-dark-subtle background-pink bg-gradient">
+<div class="d-flex my-5">
+    <form id="register" class="fs-3 my-5 me-5 p-4 border rounded border-dark-subtle background-pink bg-gradient">
         <p class="text-center">Register</p>
         <label for="username_register">Username:</label><br>
         <input type="text" id="username_register" name="username" class="bg-dark bg-gradient border border-dark rounded"><br>
@@ -38,7 +38,7 @@
         <input type="submit" value="Sign up" class="mt-4 px-4 py-2 bg-dark bg-gradient text-white border border-dark rounded">
     </form>
 
-    <form id="login" class="fs-3 text-center my-5 p-4 border rounded border-dark-subtle background-pink bg-gradient" action="index.php?page=logging_in" method="post">
+    <form id="login" class="fs-3 my-5 p-4 border rounded border-dark-subtle background-pink bg-gradient" action="index.php?page=logging_in" method="post">
         <p class="text-center">Login</p>
         <label for="username">Username:</label><br>
         <input type="text" id="username" name="username" class="bg-dark bg-gradient border border-dark rounded"><br>
@@ -51,7 +51,7 @@
 
         <input type="submit" value="Sign in" class="mt-4 px-4 py-2 bg-dark bg-gradient text-white border border-dark rounded">
     </form>
-
+</div>
 </div>
 
 </body>
