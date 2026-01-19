@@ -28,7 +28,7 @@
 <div id="login_page" class="d-flex justify-content-center align-items-center flex-fill bg-dark text-white">
 <div class="d-flex my-5">
     <form id="register" class="fs-3 my-5 me-5 p-4 border rounded border-dark-subtle background-pink bg-gradient">
-        <p class="text-center">Register</p>
+        <i class="bi bi-person-plus-fill"></i><p class="text-center"> Register</p>
         <label for="username_register">Username:</label><br>
         <input type="text" id="username_register" name="username" class="bg-dark bg-gradient border border-dark rounded"><br>
         <label for="password_register">Password:</label><br>
@@ -39,7 +39,7 @@
     </form>
 
     <form id="login" class="fs-3 my-5 p-4 border rounded border-dark-subtle background-pink bg-gradient" action="index.php?page=logging_in" method="post">
-        <p class="text-center">Login</p>
+        <i class="bi bi-box-arrow-in-right"></i><p class="text-center"> Login</p>
         <label for="username">Username:</label><br>
         <input type="text" id="username" name="username" class="bg-dark bg-gradient border border-dark rounded"><br>
         <label for="password">Password:</label><br>
