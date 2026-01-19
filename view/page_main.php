@@ -29,7 +29,7 @@
 <body class="d-flex flex-column min-vh-100 font-monospace">
     <div id="main" class="flex-fill bg-dark text-white">
         <div id="app">
-            <div id="timer"></div>
+            <div id="timer" class="p-2 mx-5 my-5 flex-wrap text-white fs-3"></div>
             <div id="typeSpace" class="flex-wrap flex-row pink fs-3" style="width: 62vw">
                 <div class="wordsWrap" tabindex="0">
                     <div id="caret"></div>
