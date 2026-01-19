@@ -31,7 +31,7 @@
         <div id="app">
             <div id="timer" class="p-2 mx-5 my-5 flex-wrap text-white fs-3"></div>
             <div id="typeSpace" class="flex-wrap flex-row pink fs-3" style="width: 62vw">
-                <div class="wordsWrap" tabindex="0">
+                <div class="wordsWrap" tabindex="0" class="pink">
                     <div id="caret"></div>
                     <div id="words">
                         <?php echo $content; ?>
